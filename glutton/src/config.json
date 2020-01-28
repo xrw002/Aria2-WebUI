@@ -1,0 +1,17 @@
+{
+  "fetchTime": 2000,
+  "defaultServer": {
+    "host": "localhost",
+    "port": 6800,
+    "secret": "",
+    "extension": "jsonrpc",
+    "ssl": false
+  },
+  "subtitleServices": {
+    "shooterFake": {
+      "token": "G7rHLEkboZe7yZ6DQCd6PZg4NVsAfGEV"
+    }
+  },
+  "subtitleSearchServices": [],
+  "enableSubtitleFeatures": false
+}

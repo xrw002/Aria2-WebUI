@@ -1,0 +1,108 @@
+@import "variables.sass"
+*
+  box-sizing: border-box
+html
+  font-family: sans-serif
+  font-size: 10px
+  height: 100%
+body
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-size: 14px
+  font-weight: 300
+  height: 100%
+  color: $color-text
+a
+  color: $color-primary
+  text-decoration: none
+  &:hover
+    color: $color-hover
+  &:active
+    color: $color-active
+.group:after
+  content: ""
+  display: table
+  clear: both
+::selection
+  background: $color-dim
+  color: white
+.container
+  padding: 0 15px
+  position: relative
+.btn
+  display: inline-block
+  vertical-align: top
+  height: 30px
+  line-height: 30px
+  color: white
+  position: relative
+  background: $color-primary
+  padding: 0 9px
+  border-radius: 4px
+  cursor: pointer
+  user-select: none
+  &:hover
+    color: white
+  &.with-icon
+    padding-left: 34px
+  i
+    display: block
+    position: absolute
+    left: 9px
+    top: 6px
+    width: 18px
+    height: 18px
+    background: url(icon_add.svg) center no-repeat rgba(255,255,255,.2)
+    border-radius: 2px
+    &.add
+      background-image: url(icon_add.svg)
+    &.pause
+      background-image: url(icon_pause.svg)
+    &.play
+      background-image: url(icon_play.svg)
+    &.remove
+      background-image: url(icon_remove.svg)
+  &.red
+    background: $color-red
+    &:hover
+      background: $color-red-dim
+    &:active
+      background: $color-red-dark
+  &.yellow
+    background: $color-yellow
+    &:hover
+      background: $color-yellow-dim
+    &:active
+      background: $color-yellow-dark
+  &.blue
+    background: $color-blue
+    &:hover
+      background: $color-blue-dim
+    &:active
+      background: $color-blue-dark
+  &.passive
+    background: $color-grey-2
+  &.disabled
+    background: $color-grey-2 !important
+  &:hover
+    background-color: $color-hover
+  &:active
+    background-color: $color-active
+  &.no-title
+    padding-right: 2px
+
+input:not([type='checkbox']):not([type='file']), textarea
+  border: 1px solid $color-grey-4
+  border-radius: 2px
+  box-shadow: 0 0 16px 0 rgba(0,0,0,0.04)
+  background: white
+  outline: none
+  height: 32px
+  padding: 0 8px
+  width: 100%
+  color: inherit
+  -webkit-appearance: none
+  &:focus
+    border-color: #DDD
+textarea
+  padding: 6px 8px
+  resize: none
